@@ -21,14 +21,14 @@ export def f-any [a: any] {}
 export def f-none [x] {}
 
 export def get_values [] { return [
-    true
-    123
-    3.14
+    "true"
+    "123"
+    "3.14"
     "10Mb"
     "10us"
     "2019-05-10T09:59:12-07:00"
     "1..10"
-    "string"
+    "'string'"
     "{}"
     "[]"
     "{||}"
