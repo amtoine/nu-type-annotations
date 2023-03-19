@@ -56,7 +56,7 @@ export def run [] {
             }
             | upsert work {|value|
                 try {
-                    nu -c $"use types.nu; types ($command.name) ($value.value)"
+                    nu -c $"use types.nu ($command.name); ($command.name) ($value.value)"
                     true
                 } catch { false }
             }
