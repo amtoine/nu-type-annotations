@@ -21,6 +21,9 @@ export def f-any [a: any] {}
 export def f-none [x] {}
 
 export def get_values [] { return [
+
+    # add a new value inside quotes
+
     "true"
     "123"
     "3.14"
