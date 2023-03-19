@@ -52,7 +52,7 @@ export def run [] {
             get_values
             | wrap value
             | upsert type {|value|
-                $value.value | describe
+                nu -c $"($value.value) | describe" | str trim
             }
             | upsert work {|value|
                 try {
